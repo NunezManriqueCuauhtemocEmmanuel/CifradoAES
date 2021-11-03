@@ -13,31 +13,36 @@
         <div class="container">
             <form action="">
                 <h2>Texto a cifrar</h2>
-                <textarea id="texto" rows="15" placeholder="Texto cifrar"></textarea>
+                <textarea id="texto" rows="10" placeholder="Texto cifrar"></textarea>
                 <br>
                 <input type="password" id="clave" name="clave" placeholder="Ingresa clave">
                 <input type="button" id="Cripto" value="Encriptar"></button>
-                <input type="reset" value="Borrar">
+                <br>
+                <input type="reset" value="Borrar" id="borr">
             </form>
         </div>
         <!-- Cifrado -->
         <div class="container">
-            <h2>Encriptado</h2>
-            <textarea id="encriptado" rows="15" placeholder="Texto encriptado"></textarea>
-            <br>
-            <button id="Decrip">Desencriptar</button>
-            <button id="DecripUTF">Desencriptar en UTF-8</button>
+            <form action="">
+                <h2>Encriptado</h2>
+                <textarea id="encriptado" rows="10" placeholder="Texto encriptado"></textarea>
+                <br>
+                <button id="Decrip">Desencriptar</button>
+                <button id="DecripUTF">Desencriptar en UTF-8</button>
+                <br>
+                <input type="reset" value="Borrar"id="borr">
+            </form>
         </div>
         <!-- descifrado -->
         <div class="container">
             <h2>Descifrado</h2>
-            <textarea  id="descifrado" rows="15" placeholder="Texto desencriptado sin formato"></textarea>
+            <textarea  id="descifrado" rows="10" placeholder="Texto desencriptado sin formato"></textarea>
             <br>
         </div>
         <!-- descifrado con UTF-8 -->
         <div class="container">
             <h2>Descifrado en formato UTF-8</h2>
-            <textarea id="descifradoUTF" rows="15" placeholder=""></textarea>
+            <textarea id="descifradoUTF" rows="10" placeholder=""></textarea>
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
