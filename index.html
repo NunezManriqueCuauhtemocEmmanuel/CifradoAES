@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CifradoAES</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>Cifrado AES</h1>
+    <div class="controllers">
+        <div class="container">
+            <form action="">
+                <h2>Texto a cifrar</h2>
+                <textarea id="texto" rows="15" placeholder="Texto cifrar"></textarea>
+                <br>
+                <input type="password" id="clave" name="clave" placeholder="Ingresa clave">
+                <input type="button" id="Cripto" value="Encriptar"></button>
+                <input type="reset" value="Borrar">
+            </form>
+        </div>
+        <!-- Cifrado -->
+        <div class="container">
+            <h2>Encriptado</h2>
+            <textarea id="encriptado" rows="15" placeholder="Texto encriptado"></textarea>
+            <br>
+            <button id="Decrip">Desencriptar</button>
+            <button id="DecripUTF">Desencriptar en UTF-8</button>
+        </div>
+        <!-- descifrado -->
+        <div class="container">
+            <h2>Descifrado</h2>
+            <textarea  id="descifrado" rows="15" placeholder="Texto desencriptado sin formato"></textarea>
+            <br>
+        </div>
+        <!-- descifrado con UTF-8 -->
+        <div class="container">
+            <h2>Descifrado en formato UTF-8</h2>
+            <textarea id="descifradoUTF" rows="15" placeholder=""></textarea>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="./js/aesCifrado.js"></script>
+
+    </div>
+</body>
+</html>
+
